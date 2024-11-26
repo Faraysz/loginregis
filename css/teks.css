@@ -1,0 +1,74 @@
+.content h1 {
+    opacity: 0;
+    transform: translateY(50px); /* Teks muncul dari bawah */
+    animation: fadeInUp 2s ease forwards;
+}
+
+/* Keyframes untuk animasi */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Kembali ke posisi awal */
+    }
+}
+
+/* Gaya untuk tombol "Mulai Sekarang" */
+.cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FFA500; /* Warna tombol oranye */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Animasi hover */
+}
+
+/* Efek hover untuk tombol */
+.cta:hover {
+    background-color: #FF8C00; /* Warna tombol saat di-hover */
+}
+
+/* Gaya umum untuk teks */
+.content h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* Responsive untuk ukuran layar lebih kecil */
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .cta {
+        padding: 8px 16px;
+    }
+}
+/* Awal posisi gambar tidak terlihat */
+
+.menu-card-img {
+    opacity: 0;
+    transform: translateY(20px); /* Pindahkan gambar ke bawah 20px */
+    transition: opacity 0.6s ease, transform 0.9s ease; /* Transisi animasi */
+  }
+  
+  /* Ketika elemen muncul di layar */
+  .menu-card-img.show {
+    opacity: 1;
+    transform: translateY(0); /* Kembalikan gambar ke posisi awal */
+  }
+  /* Awal posisi button tidak terlihat */
+.btn {
+    opacity: 0;
+    transform: translateY(20px); /* Pindahkan button ke bawah 20px */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Transisi animasi */
+  }
+  
+  /* Ketika button muncul di layar */
+  .btn.show {
+    opacity: 1;
+    transform: translateY(0); /* Kembalikan button ke posisi awal */
+  }
+  
