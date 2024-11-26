@@ -41,7 +41,7 @@ if (isset($_POST['verify'])) {
             <p class="text-red-500 mb-4 text-center"><?php echo $error; ?></p>
         <?php endif; ?>
         <form action="verif.php" method="POST">
-            <input type="text" name="otp[]" maxlength="1" required class="w-full p-3 mb-4 border border-gray-300 rounded">    
+            <input type="text" name="otp[]" placeholder="Masukkan Kode OTP" required class="w-full p-3 mb-4 border border-gray-300 rounded">    
             <button type="submit" name="verify" class="w-full bg-blue-500 text-white p-3 rounded hover:bg-blue-600">Verifikasi</button>
         </form>
     </div>
